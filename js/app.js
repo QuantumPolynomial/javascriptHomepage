@@ -1,5 +1,13 @@
 var clock = document.getElementById("clock");
 var hexColor = document.getElementById("hex-color");
+var redditColor = document.getElementById("reddit");
+
+
+
+
+
+
+
 
 
 
@@ -23,7 +31,7 @@ function hexClock() {
 	var clockStr =  hours + ':' + minutes + ':' + seconds;
 	hexColor.textContent = hexColorStr;
 	clock.textContent = clockStr;
-	document.body.style.color = hexColorStr;
+	document.body.style.background = hexColorStr;
 }
 hexClock()
 setInterval(hexClock, 1000);
